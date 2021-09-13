@@ -1,0 +1,27 @@
+<mat-card [ngClass]="{ 'header-color-mora': account.props.debtOverdraft! > 0 }">
+  <mat-card-header>
+    <mat-card-title>{{ account.name }}</mat-card-title>
+    <mat-card-subtitle>{{ account.id }}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src="assets/client/{{ account.id_imag }}" alt="" />
+  <mat-card-content>
+    <h3>Tipo Cuenta: {{ account.props.type }}</h3>
+    <p>
+      <strong>Cupo</strong>
+      {{
+        account.props.totalOverdraft | currency: "CAD":"symbol-narrow":"1.0-0"
+      }}
+      <br />
+      <strong>Saldo: </strong>
+      {{
+        account.props.availableOverdraft
+          | currency: "CAD":"symbol-narrow":"1.0-0"
+      }}
+      <br />
+      <strong class="text-color-accent">Deuda:</strong>
+      {{
+        account.props.debtOverdraft | currency: "CAD":"symbol-narrow":"1.0-0"
+      }}
+    </p>
+  </mat-card-content>
+</mat-card>

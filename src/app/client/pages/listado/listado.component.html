@@ -1,0 +1,22 @@
+<h1>Productos usuario</h1>
+<mat-divider></mat-divider>
+<br />
+<span>Cuentas usuario</span>
+<div
+  fxLayout="row wrap"
+  fxLayout.xs="column wrap"
+  fxLayoutAlign="center"
+  fxLayoutGap="20px"
+>
+  <div
+    fxFlex="20"
+    fxFlex.lg="15"
+    fxFlex.sm="30"
+    *ngFor="let account of accounts"
+  >
+    <app-account-card [account]="account"></app-account-card>
+  </div>
+  <div fxFlex="20" fxFlex.lg="15" fxFlex.sm="30" *ngFor="let credit of credits">
+    <app-credit-card [credit]="credit"></app-credit-card>
+  </div>
+</div>

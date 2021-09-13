@@ -1,0 +1,20 @@
+<mat-card [ngClass]="{ 'header-color-mora': credit.debt! > 0 }">
+  <mat-card-header>
+    <mat-card-title>{{ credit.name }}</mat-card-title>
+    <mat-card-subtitle>{{ credit.number }}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src="assets/client/{{ credit.id_imag }}" alt="" />
+  <mat-card-content>
+    <h3>Tipo Cuenta: {{ credit.props.type }}</h3>
+    <p>
+      <strong>balance: </strong>
+      {{ credit.balance | currency: "CAD":"symbol-narrow":"1.0-0" }}
+      <br />
+      <strong>Saldo: </strong>
+      {{ credit.availableBalance | currency: "CAD":"symbol-narrow":"1.0-0" }}
+      <br />
+      <strong class="text-color-accent">Deuda:</strong>
+      {{ credit.debt | currency: "CAD":"symbol-narrow":"1.0-0" }}
+    </p>
+  </mat-card-content>
+</mat-card>
