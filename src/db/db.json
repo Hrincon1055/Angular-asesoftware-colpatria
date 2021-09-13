@@ -1,0 +1,123 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "usuario": "Henry Rincon",
+      "email": "henry@correo.com"
+    }
+  ],
+  "accounts": [
+    {
+      "id": "9266738933",
+      "name": "CUENTA DE AHORROS",
+      "amount": 12755877.33,
+      "status": 1,
+      "openDate": "1550859031000",
+      "id_imag": "no-image.png",
+      "props": {
+        "type": "CA",
+        "totalOverdraft": 0
+      }
+    },
+    {
+      "id": "9986378220976",
+      "name": "CUENTA BOLSILLO",
+      "amount": 250500.12,
+      "status": 1,
+      "openDate": "1552587031000",
+      "id_imag": "no-image.png",
+      "props": {
+        "type": "CA",
+        "totalOverdraft": 0
+      }
+    },
+    {
+      "id": "2343248876",
+      "name": "CUENTA BOLSILLO",
+      "amount": 250500.12,
+      "status": 2,
+      "openDate": "1547143831000",
+      "id_imag": "no-image.png",
+      "props": {
+        "type": "CA",
+        "totalOverdraft": 0
+      }
+    },
+    {
+      "id": "33752234456",
+      "name": "CUENTA CORRIENTE",
+      "amount": 75000.78,
+      "status": 1,
+      "openDate": "1591812631",
+      "id_imag": "no-image.png",
+      "props": {
+        "type": "CC",
+        "totalOverdraft": 500000,
+        "availableOverdraft": 200000,
+        "debtOverdraft": 300000
+      }
+    }
+  ],
+  "creditCard": [
+    {
+      "name": "TARJETA VISA BLACK",
+      "number": 4522009278651112,
+      "openDate": "1547143831000",
+      "balance": 25000000,
+      "availableBalance": 20000000,
+      "debt": 5000000,
+      "status": 1,
+      "id_imag": "visa_logo.png",
+      "props": {
+        "type": "TC",
+        "nextPaymentDate": "1623262231000",
+        "nextPaymentAmount": "100000"
+      }
+    },
+    {
+      "name": "TARJETA MASTER CARD ORO",
+      "number": 5564986747392727,
+      "openDate": "1550859031000",
+      "balance": 5500000,
+      "availableBalance": 4500000,
+      "debt": 1000000,
+      "status": 3,
+      "id_imag": "mastercard_logo.png",
+      "props": {
+        "type": "TC",
+        "nextPaymentDate": "1626804631000",
+        "nextPaymentAmount": "250000"
+      }
+    },
+    {
+      "name": "TARJETA AVIANCA MILLAS",
+      "number": 4433987623981200,
+      "openDate": "1547143831000",
+      "balance": 1500000,
+      "availableBalance": 1500000,
+      "debt": 0,
+      "status": 1,
+      "id_imag": "visa_logo.png",
+      "props": {
+        "type": "TC",
+        "nextPaymentDate": "",
+        "nextPaymentAmount": "0"
+      }
+    }
+  ],
+  "loans": {
+    "name": "CREDITO DE VIVIENDA",
+    "amount": 250000000,
+    "number": 982392349876,
+    "openDate": "1547143831000",
+    "months": 72,
+    "status": 1,
+    "debtMonts": 10,
+    "id_imag": "visa_logo.png",
+    "props": {
+      "type": "TC",
+      "nextPaymentDate": "1624644631000",
+      "nextPaymentAmount": "1500000"
+    }
+  }
+}
